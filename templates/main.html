@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>欢迎你：{{ user.username }}</p>
+<div class="author">
+    <i class="PyWhich py-user"></i>
+    <span>{{ user.username }}</span>
+    <ul class="author-menu">
+        <li><a href="{% url 'logout' %}">退出登录</a></li>
+    </ul>
+</div>
+<button type="submit" formaction="/main/">以管理员身份提交</button>
+</body>
+</html>

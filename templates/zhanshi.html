@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>id</th>
+            <th>题目</th>
+            <th>描述</th>
+            <th>出题人</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for que in all_que %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ que.id }}</td>
+                <td>{{ que.question }}</td>
+                <td>{{ que.detail }}</td>
+                <td>{{ que.author }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

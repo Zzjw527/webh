@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+ <script type="text/javascript">
+       $(function () {
+            $.ajax({
+                url:'127.0.0.1/login',
+                methods:'post',
+                success:function (res) {
+                    if(res.code===200){
+                        {#var cover=res.msg[0].;#}
+                        console.log(res);
+                    };
+
+                },
+                error:function (err) {
+                    console.log(err);
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>
